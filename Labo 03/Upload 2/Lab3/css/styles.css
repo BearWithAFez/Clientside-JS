@@ -1,0 +1,56 @@
+/*
+ * Binary sudoku styles
+ *
+ * @author Rogier van der Linde <rogier.vanderlinde@odisee.be>
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+	font: 18px arial, sans-serif;
+}
+body {
+	margin: 20px;
+	text-align: center;
+}
+table {
+	border-collapse: collapse;
+	border: 3px solid;
+	margin: 20px auto;
+}
+td {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #000;
+	padding: 5px;
+	text-align: center;
+	line-height: 30px;
+	overflow: hidden;
+}
+img {
+	border: 0;
+}
+td:focus {
+	background-color: #ccc;
+}
+td.invalid {
+	background-color: #f99;
+}
+td[contenteditable] {
+	color: #77d;
+	font-style: italic;
+	font-size: 24px;
+	font-family: Calabri, Times;
+}
+p {
+	margin: 20px 0;
+	font-size: 14px;
+}
+button {
+	border-radius: 0;
+	background-color: #ccc;
+	border: 1px solid #666;
+	font-size: 12px;
+	padding: 5px 10px;
+	text-transform: uppercase;
+}

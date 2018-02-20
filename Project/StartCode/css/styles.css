@@ -1,0 +1,193 @@
+/*
+ * Contact cards styles
+ *
+ * @author Rogier van der Linde <rogier@bitmatters.be>
+ */
+
+/* ===========================================
+    General
+    =========================================== */
+
+/* elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #e5e9ed;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #428bca;
+    outline: none;
+}
+
+a:hover {
+    color: #2a6496;
+}
+
+/* classes */
+
+.structural,
+.screen-reader-text {
+    left: -9999px;
+    position: absolute;
+}
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* ===========================================
+    Header
+    =========================================== */
+
+/* title */
+
+.page__title {
+    color: #506A85;
+    font-size: 4.4rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* ===========================================
+    Content
+    =========================================== */
+
+/* layout */
+
+.page__wrapper {
+    margin: 0 auto;
+    max-width: 96rem;
+    padding: 0 2rem;
+}
+
+.page__main {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 5rem;
+}
+
+.main__wrapper {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+/* conversation box */
+
+.main__conversation {
+    background-color: white;
+    height: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    overflow-y: scroll;
+    padding: 1rem;
+}
+
+/* divider */
+
+.main__divider {
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+}
+
+/* mew comment */
+
+#newcomment__text {
+    display: block;
+    background-color: white;
+    height: 10rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+#newcomment__email {
+    display: block;
+    background-color: white;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.newcomment__label {
+    text-transform: uppercase;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.newcomment__buttons {
+    display: block;
+    overflow: hidden;
+}
+
+#newcomment__add {
+    float: right;
+    margin: 2rem 0 4rem 0;
+    border: 1px solid #999;
+    padding: 0.5rem 1rem;
+    background-color: #eee;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem
+}
+
+#newcomment__add:hover {
+    background-color: white;
+}
+
+
+/* ===========================================
+    Footer
+    =========================================== */
+
+.page__footer {
+    background-color: #fff;
+    min-height: 20rem;
+    padding: 6rem 6rem 2rem;
+    text-align: center;
+}
+
+
+/* ===========================================
+    Media queries
+    =========================================== */
+
+
+@media (min-width: 30em) { /* 480px */
+
+}
+
+@media (min-width: 37.5em) { /* 600px */
+
+}
+
+@media (min-width: 50em) { /* 800px */
+}
+
+@media (min-width: 60em) { /* 960px */
+
+}
+
+

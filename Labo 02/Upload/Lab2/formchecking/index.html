@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formchecking</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="fonts/lato/webfont.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+	<form id="form1">
+		<h1>Registratie</h1>
+		<div id="summary">
+			Het formulier is onvolledig ingevuld en/of bevat fouten. Gelieve dit te corrigeren en opnieuw te proberen.
+		</div>
+		<fieldset>
+			<legend>Persoonlijk</legend>
+			<div class="qstn qstn1">
+				<label for="qstName">Naam *</label>
+				<input type="text" id="qstName" value="" required />
+				<span class="message message--error" id="errName">&nbsp;</span>
+			</div>
+			<div class="qstn qstn2">
+				<label for="qstEmail">Email *</label>
+				<input type="email" id="qstEmail" value="" required />
+				<span class="message message--error" id="errEmail">&nbsp;</span>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Adresgegevens</legend>
+			<div class="qstn qstn3">
+				<label for="qstStreet">Straat en nummer *</label>
+				<input type="text" id="qstStreet" value="" required />
+				<span class="message message--error" id="errStreet">&nbsp;</span>
+			</div>
+			<div class="qstn qstn4">
+				<label for="qstZip">Postcode *</label>
+				<input type="number" id="qstZip" value="" class="input--half" required />
+				<span class="message message--error" id="errZip">&nbsp;</span>
+			</div>
+			<div class="qstn qstn5">				
+				<label for="qstCity">Gemeente *</label>
+				<input type="text" id="qstCity" value="" required />
+				<span class="message message--error" id="errCity">&nbsp;</span>
+			</div>
+			<div class="qstn qstn6">
+				<label for="qstCountry">Land *</label>
+				<select id="qstCountry" required>
+					<option selected="selected" value="-1">kies...</option>
+					<option value="BE">België</option>
+					<option value="NL">Nederland</option>
+				</select>
+				<span class="message message--error" id="errCountry">&nbsp;</span>
+			</div>	
+		</fieldset>
+		<fieldset>
+			<legend>Slotvragen</legend>
+			<div class="qstn qstn7">
+				<label>Interesses *</label>
+				<p class="message">
+					duid minstens twee aan
+				</p>
+				<label for="qstIterests_web" class="label--checkbox"><input type="checkbox" id="qstInterests_web" /> web development</label>
+				<label for="qstInterests_sys" class="label--checkbox"><input type="checkbox" id="qstInterests_sys" /> sys admin</label>
+				<label for="qstInterests_iot" class="label--checkbox"><input type="checkbox" id="qstInterests_iot" /> internet of things</label>
+				<label for="qstInterests_security" class="label--checkbox"><input type="checkbox" id="qstInterests_security" /> cyber security</label>
+				<label for="qstInterests_other" class="label--checkbox"><input type="checkbox" id="qstInterests_other" /> andere, namelijk...</label>
+				<input type="text" id="qstInterests_inp_other" /> 
+				<span class="message message--error" id="errInterests">&nbsp;</span>
+			</div>
+			<div class="qstn qstn8">
+				<label>Mogen wij je gegevens delen met bevoorrechte partners? *</label>
+				<label for="share_yes" class="label--radio"><input type="radio" name="share" id="share_yes" /> ja, geen probleem</label>
+				<label for="share_no" class="label--radio"><input type="radio" name="share" id="share_no" /> nee, liever niet</label>
+				<span class="message message--error" id="errShare">&nbsp;</span>
+			</div>
+			<div class="qstn qstn9">
+				<label>Aanvaard je de gebruiksvoorwaarden?</label>
+				<label for="qstAccept" class="label--checkbox"><input type="checkbox" id="qstAccept" /> ja, ik accepteer de <a href="#">gebruiksvoorwaarden</a> *</label>
+				<span class="message message--error" id="errAccept">&nbsp;</span>
+			</div>
+		</fieldset>
+		<div class="buttons clearfix">
+			<input type="submit" id="btnSubmit" value="Registreren" />
+		</div>
+	</form>
+	<div id="thankyou">
+		<h1>Bedankt!</h1>
+		<div id="thankyou__message">
+			Je registratie is voltooid. Over enkele ogenblikken zul je een e-mail ontvangen met verdere instructies.
+		</div>
+	</div>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
